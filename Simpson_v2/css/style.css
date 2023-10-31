@@ -1,0 +1,174 @@
+/****************General*******************/
+
+:root {
+    --color-theme-blue: rgb(31, 85, 231);
+}
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 196, 18);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, footer{ /* alignement au centre des titres */ 
+    text-align: center;
+}
+
+/***************************header*******************/
+
+h2{ /* titre site */
+    padding: 5px;
+    color: white;
+    background-color: var(--color-theme-blue);
+    font-size: 2.81em; /* par défaut pour la plupart des appareils : 1em = 16px */
+    font-style: italic;
+}
+
+.simpsons{ /* img famille simpson */    
+    width: 100%;
+    /* border-top: 1px solid white;
+    border-bottom: 1px solid white; */
+    border: 1px solid white;
+    border-width: 1px 0px;
+    vertical-align: bottom; /*!!!permet de faire disparaitre la barre jaune sous l'img!!!*/ 
+}
+
+
+
+/***************************Main*******************/
+
+#wrapper{
+    /* width: 80%;
+    margin: 0 auto; */
+    padding: 0 10%;
+}
+
+main{
+    background-color: #fff;
+
+}
+
+#contenu{ /* groupement de article et aside */ 
+    display: flex;
+} 
+
+
+
+
+/*********nav************/
+
+nav{
+    border-bottom: 5px dashed #fff;
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-theme-blue);
+    
+
+}
+
+nav ul li{
+    padding: 2em;
+    display: inline-flex;
+    text-transform: uppercase;
+    font-size: larger;
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--color-theme-blue);
+}
+
+/*********article************/
+
+article, h1, p{
+    padding: 1em 1em;
+}
+
+h1{ /* Les Simpsons */
+    text-transform: uppercase;
+    color: orange;
+    font-size: 40px;
+
+}
+
+
+article p{
+    text-align: justify;
+}
+
+/** galerie sous le paragraphe **/
+
+article div{ 
+
+    display: flex;
+    align-items: center;
+    
+
+}
+
+.galerie{
+    display: block;
+    width: 70%;
+    margin: 1em 1em;
+    outline: 1px solid black;
+
+    
+    
+}
+
+
+/*********aside************/
+
+aside{
+    margin: 1em 1em;
+    padding: 1em;   
+    height: fit-content; 
+    color: white;
+    background-color: var(--color-theme-blue);
+}
+
+.matt{ /* img matt groening */
+    width: 80%;
+    border: 1px solid white;
+    
+
+}
+
+h3{ /* titre aside */
+    font-size: 30px;
+
+}
+
+
+aside figure{ /* alignement de l'image et son titre */
+    text-align: center;
+
+    
+}
+
+aside p { /* alignement du paragraphe */
+    text-align: justify;
+
+}
+
+
+
+/***************************footer*******************/
+
+footer{
+    font-size: 20px;
+    color: white;
+    background-color: var(--color-theme-blue);
+    padding: 7px;
+}
+
+
+

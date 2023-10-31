@@ -1,0 +1,105 @@
+/****************General*******************/
+
+*{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(236, 196, 18);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, nav, footer{ /* alignement au centre des titres */ 
+    text-align: center;
+}
+
+h2,nav,a, aside, footer{ /* change la couleur du texte et du background */
+    color: white;
+    background-color: rgb(31, 85, 231);
+}
+
+/***************************header*******************/
+
+h2{ /* titre site */
+    padding: 5px;
+}
+
+.simpsons{ /* img famille simpson */    
+    width: 100%;
+    vertical-align: bottom;
+}
+
+h1{ /* Les Simpsons */
+    color: orange;
+    font-size: 30px;
+}
+
+/***************************Main*******************/
+
+#wrapper{
+    width: 80%;
+    margin: 0 auto;
+   
+}
+
+main{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+
+}
+
+
+/*********nav************/
+
+nav{
+    height: fit-content;
+    line-height: 30px;
+    margin: 1em;
+    padding: 1em 2em;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+/*********article************/
+
+article, h1, p{
+    padding: 1em 0em;
+}
+
+/*********aside************/
+
+aside{
+    margin: 1em;
+    padding: 1em;   
+    height: fit-content; 
+    
+}
+
+.matt{ /* img matt groening */
+    width: 70%;
+    border: 1px solid white;
+}
+
+h3{ /* titre aside */
+    font-size: 20px;
+}
+
+
+aside figure{ /* alignement de l'image et son titre */
+    text-align: center;
+}
+
+aside p { /* alignement du paragraphe */
+    text-align: justify;
+
+}
+/***************************footer*******************/
+
+
+
+
+
